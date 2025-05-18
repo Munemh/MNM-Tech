@@ -1,0 +1,251 @@
+/* Universal Reset */
+html,
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  overflow-x: hidden;
+  /* Prevent horizontal scroll */
+  box-sizing: border-box;
+  /* Include padding and border in dimensions */
+}
+
+* {
+  box-sizing: inherit;
+  /* Ensure box-sizing applies to all elements */
+}
+
+/* Body Wrapper */
+body-wrapper {
+  display: flex;
+  flex-direction: column;
+  /* Stack children vertically */
+  min-height: 100vh;
+  /* Full viewport height */
+  width: 100%;
+  background-color: #f9f9f9;
+  /* Optional: light background */
+}
+
+/* Main Container */
+.container {
+  width: 100%;
+  max-width: 1200px;
+  /* Limit content width */
+  margin: 0 auto;
+  /* Center horizontally */
+  padding: 0 20px;
+  /* Add padding to prevent content from touching edges */
+}
+
+/* General Heading Styles */
+h1,
+h2,
+h3 {
+  color: #333;
+  font-weight: bold;
+}
+
+/* Form Styles */
+.form-container {
+  max-width: 600px;
+  /* Ensure the form doesn’t grow too wide */
+  margin: 50px auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.form-container h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 24px;
+  color: #333;
+}
+
+.add-user-form {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  /* 2 columns for inputs */
+  gap: 20px;
+  /* Spacing between fields */
+}
+
+.add-user-form .form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.add-user-form .form-group label {
+  margin-bottom: 8px;
+  font-weight: bold;
+  color: #666;
+}
+
+.add-user-form .form-group input[type="text"],
+.add-user-form .form-group input[type="email"],
+.add-user-form .form-group input[type="tel"],
+.add-user-form .form-group input[type="password"],
+.add-user-form .form-group input[type="date"],
+.add-user-form .form-group input[type="file"],
+.add-user-form .form-group input[type="checkbox"] {
+  padding: 10px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.add-user-form .form-group input[type="checkbox"] {
+  width: auto;
+  /* Reset checkbox width */
+}
+
+/* Form Buttons */
+.form-buttons {
+  grid-column: span 2;
+  /* Buttons span the full width */
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+}
+
+button {
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+button.submit {
+  background-color: #4CAF50;
+  color: white;
+}
+
+button.dismiss {
+  background-color: #f44336;
+  color: white;
+}
+
+button:hover {
+  opacity: 0.9;
+}
+
+/* Dashboard Styles */
+.dashboard-page {
+  margin: 30px auto;
+}
+
+.dashboard-summary {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 30px;
+  flex-wrap: wrap;
+  /* Allow wrapping on smaller screens */
+}
+
+.card {
+  flex: 1;
+  background: #fff;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.card.stats strong {
+  font-size: 20px;
+  color: #007bff;
+}
+
+.image-preview {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.profile-image {
+  width: 100px;
+  /* Adjust size as needed */
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #ddd;
+}
+
+.charts-container {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  /* Allow wrapping */
+}
+
+.chart,
+.completion {
+  flex: 1;
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive Design */
+
+/* Mobile and smaller screens */
+@media (max-width: 600px) {
+  .add-user-form {
+    grid-template-columns: 1fr;
+    /* Single column for inputs */
+  }
+
+  .form-buttons {
+    flex-direction: column;
+    /* Stack buttons vertically */
+    align-items: stretch;
+    /* Stretch buttons to full width */
+  }
+
+  .dashboard-summary,
+  .charts-container {
+    flex-direction: column;
+    /* Stack elements vertically */
+  }
+
+  .card {
+    margin-bottom: 20px;
+  }
+}
+
+/* Tablets and medium screens */
+@media (min-width: 601px) and (max-width: 1024px) {
+  .add-user-form {
+    grid-template-columns: repeat(2, 1fr);
+    /* Keep two columns */
+  }
+
+  .dashboard-summary,
+  .charts-container {
+    flex-wrap: wrap;
+    /* Allow wrapping */
+  }
+}
+
+/* Larger screens */
+@media (min-width: 1025px) {
+  .add-user-form {
+    grid-template-columns: repeat(2, 1fr);
+    /* 2 columns */
+  }
+
+  .dashboard-summary {
+    flex-wrap: nowrap;
+    /* Prevent wrapping */
+  }
+
+  .charts-container {
+    flex-wrap: nowrap;
+    /* Prevent wrapping */
+  }
+}
