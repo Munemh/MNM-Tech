@@ -145,22 +145,44 @@ const services = [
   },
 ];
 
+// export const ServicesSection = () => {
+//   return (
+//     <div className="flex bg-black text-white p-10">
+//       <div className="flex flex-col justify-center">
+//         <h2 className="text-4xl font-bold" style={{ color: "white" }}>
+//           Services
+//         </h2>
+//         <div className="bg-black text-white py-10 grid grid-cols-1 md:grid-cols-3 gap-6">
+//           {services.map((service, index) => (
+//             <ServiceCard key={index} {...service} />
+//           ))}
+//         </div>
+//       </div>
+//     </div>
+//   );
+// };
 export const ServicesSection = () => {
   return (
-    <div className="flex bg-black text-white p-10">
-      <div className="flex flex-col justify-center">
-        <h2 className="text-4xl font-bold" style={{ color: "white" }}>
-          Services
-        </h2>
-        <div className="bg-black text-white py-10 grid grid-cols-1 md:grid-cols-3 gap-6">
+    <div className="flex flex-col bg-black text-white px-10 py-16">
+      <div className="flex flex-col items-center text-center">
+        <h2 className="text-4xl font-bold mb-8">Services</h2>
+
+        <div className="w-full grid grid-cols-1 md:grid-cols-3 gap-6 mb-10">
           {services.map((service, index) => (
             <ServiceCard key={index} {...service} />
           ))}
         </div>
+
+        <Link href="/Service">
+          <button className="bg-white text-black px-6 py-3 rounded-full text-lg font-medium hover:bg-gray-200 transition">
+            Explore More
+          </button>
+        </Link>
       </div>
     </div>
   );
 };
+
 
 export const Footer = () => {
   return (
