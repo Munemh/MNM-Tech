@@ -123,10 +123,10 @@ const PrivacyPolicyPage = () => {
                   <p>For questions about this policy:</p>
                   <address className="not-italic mt-2">
                     MNM Technology<br />
-                    123 Tech Street<br />
-                    San Francisco, CA 94107<br />
-                    Email: privacy@mnmtechnology.com<br />
-                    Phone: (555) 123-4567
+                    H#I87 Allam khan road<br />
+                    Rawalpindi,Pakistan<br />
+                    Email: munem.habib1@gmail.com<br />
+                    Phone: 92 (316) 5338040
                   </address>
                 </section>
               </motion.div>
