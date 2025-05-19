@@ -228,6 +228,7 @@ export const Footer = () => {
                 <li><a href="/experties" className="hover:text-white">Our Experties</a></li>
                 <li><a href="#services" className="hover:text-white">Services</a></li>
                 <li><a href="/Technology" className="hover:text-white">Technology Stack</a></li>
+                <li><a href="/Team" className="hover:text-white">Meet Our Team</a></li>
               </ul>
             </div>
 
