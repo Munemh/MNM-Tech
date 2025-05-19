@@ -63,12 +63,12 @@ export const HomeSection = () => {
     </section>
   );
 };
-
 export const AboutUsCard = () => {
   return (
-    <div className="flex bg-black text-white p-10">
-      <div className="w-1/2 flex flex-col justify-center">
-        <h2 className="text-4xl font-bold">About Us</h2>
+    <div className="flex flex-col lg:flex-row bg-black text-white p-6 md:p-10">
+      {/* Text Content - comes first in mobile view */}
+      <div className="w-full lg:w-1/2 flex flex-col justify-center order-2 lg:order-1">
+        <h2 className="text-3xl md:text-4xl font-bold">About Us</h2>
         <p className="mt-4 text-gray-300">
           MNM Technologies is a Pakistan-based software house focused on delivering robust web, mobile, and cloud-based
           solutions to clients across the globe. Founded in 2023, we strive to build innovative digital products that solve
@@ -89,14 +89,17 @@ export const AboutUsCard = () => {
           </span>
           <span className="relative invisible">Get in Touch</span>
         </Link>
-
       </div>
-      <div className="w-1/2 flex justify-center relative">
-        <div className="relative z-10">
+
+      {/* Image - comes second in mobile view */}
+      <div className="w-full lg:w-1/2 flex justify-center relative mb-6 lg:mb-0 order-1 lg:order-2">
+        <div className="relative z-10 w-full max-w-md">
           <Image
             src={require("../../img/about.png")}
             alt="About Us"
-            className="rounded-lg shadow-lg"
+            width={500}
+            height={500}
+            className="rounded-lg shadow-lg w-full h-auto"
           />
         </div>
       </div>
