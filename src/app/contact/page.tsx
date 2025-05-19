@@ -221,8 +221,8 @@ const ContactPage = () => {
                   </div>
                   <div>
                     <h3 className="text-lg font-medium text-gray-300">Email Us</h3>
-                    <p className="text-gray-400">contact@yourcompany.com</p>
-                    <p className="text-gray-400">support@yourcompany.com</p>
+                    <p className="text-gray-400">munem.habib1@gmail.com</p>
+                    <p className="text-gray-400">munam502@gmail.com</p>
                   </div>
                 </div>
 
@@ -234,7 +234,7 @@ const ContactPage = () => {
                   </div>
                   <div>
                     <h3 className="text-lg font-medium text-gray-300">Call Us</h3>
-                    <p className="text-gray-400">+1 (555) 123-4567</p>
+                    <p className="text-gray-400">+92 (316) 5338040</p>
                     <p className="text-gray-400">Mon-Fri: 9am-5pm</p>
                   </div>
                 </div>
@@ -248,8 +248,8 @@ const ContactPage = () => {
                   </div>
                   <div>
                     <h3 className="text-lg font-medium text-gray-300">Visit Us</h3>
-                    <p className="text-gray-400">123 Tech Street</p>
-                    <p className="text-gray-400">San Francisco, CA 94107</p>
+                    <p className="text-gray-400">H#I87 Allam khan Road</p>
+                    <p className="text-gray-400">Rawalpindi, Pakistan</p>
                   </div>
                 </div>
               </div>
