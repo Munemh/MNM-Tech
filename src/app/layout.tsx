@@ -8,8 +8,13 @@ import ClientProvider from "./components/Provider/ClientProvider";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Secure Consultancy",
+  title: "MNM Technologies",
   description: "",
+  icons: {
+    icon: "/3d_logo.png", // or .png, .svg
+    shortcut: "/simple_logo.png",
+    apple: "/3d_logo.png",
+  }
 };
 
 export default function RootLayout({

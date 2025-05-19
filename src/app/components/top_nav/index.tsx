@@ -9,7 +9,7 @@ import {
   FaCalendarAlt,
   FaPhoneAlt,
 } from "react-icons/fa";
-
+import Link from "next/link";
 export function TopNav() {
   return (
     <div className="bg-black text-white py-3 px-4 flex flex-wrap justify-center md:justify-between items-center text-xs md:text-sm gap-2">
@@ -35,9 +35,9 @@ export function TopNav() {
 
 export const HomeSection = () => {
   return (
-    <section className="flex flex-col items-center text-center px-6 py-12">
+    <section className="flex flex-col items-center text-center ">
       <div className="max-w-4xl">
-        <h1 className="text-4xl font-bold text-white mb-6">MNM TECHNOLOGIES</h1>
+        {/* <h1 className="text-4xl font-bold text-white mb-6">MNM TECHNOLOGIES</h1> */}
         <p className="text-lg text-white mb-6">
           Empowering businesses through custom software solutions, MNM Technologies helps startups and enterprises alike
           build scalable, efficient, and modern digital products. From web and mobile development to cloud integration and DevOps,
@@ -74,9 +74,22 @@ export const AboutUsCard = () => {
           solutions to clients across the globe. Founded in 2023, we strive to build innovative digital products that solve
           real-world problems and drive growth.
         </p>
-        <button className="mt-4 px-6 py-2 bg-blue-500 text-white rounded-full">
-          Get in Touch
-        </button>
+
+        <Link
+          href="/contact"
+          className="mt-5 group relative inline-flex items-center justify-center px-6 py-3 overflow-hidden font-medium text-white transition duration-300 ease-out rounded-lg shadow-lg bg-gradient-to-br from-blue-500 to-blue-600 hover:from-blue-600 hover:to-blue-700"
+        >
+          <span className="absolute inset-0 flex items-center justify-center w-full h-full duration-300 -translate-x-full group-hover:translate-x-0 bg-blue-700/30">
+            <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"></path>
+            </svg>
+          </span>
+          <span className="absolute flex items-center justify-center w-full h-full transition-all duration-300 transform group-hover:translate-x-full">
+            Get in Touch
+          </span>
+          <span className="relative invisible">Get in Touch</span>
+        </Link>
+
       </div>
       <div className="w-1/2 flex justify-center relative">
         <div className="relative z-10">
@@ -189,7 +202,8 @@ export const Footer = () => {
               <ul className="mt-4 space-y-2 text-gray-400">
                 <li><a href="#home" className="hover:text-white">Home</a></li>
                 <li><a href="#about" className="hover:text-white">About</a></li>
-                <li><a href="#" className="hover:text-white">Contact</a></li>
+                <li><a href="/contact" className="hover:text-white">Contact</a></li>
+                <li><a href="/experties" className="hover:text-white">Our Experties</a></li>
                 <li><a href="#services" className="hover:text-white">Services</a></li>
                 <li><a href="/Technology" className="hover:text-white">Technology Stack</a></li>
               </ul>
