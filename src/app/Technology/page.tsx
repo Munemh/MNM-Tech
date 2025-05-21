@@ -171,7 +171,7 @@ const TechnologyPage = () => {
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.3 }}
           >
-            <h2 className="text-xl font-semibold">Technology Stack</h2>
+            <h2 className="text-xl font-semibold text-white">Technology Stack</h2>
           </motion.div>
           <motion.div
             whileHover={{ scale: 1.05 }}

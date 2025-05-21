@@ -1,10 +1,15 @@
 "use client"
-import { TopNav, AboutUsCard, Footer, ServicesSection, HomeSection } from "../components/top_nav";
+// import { TopNav, AboutUsCard, Footer, ServicesSection, HomeSection } from "../components/top_nav";
 import { Chart as ChartJS, CategoryScale, LinearScale, PointElement, LineElement, Title } from "chart.js";
 import SwiperCarousel from "../components/Crousal";
 import { Background, TextContent } from "../components/Background";
 import { motion, useAnimation, useInView } from "framer-motion";
 import { useEffect, useRef } from "react";
+import { TopNav } from "../components/TopNav";
+import { HomeSection } from "../components/HomeSection";
+import { AboutUsCard } from "../components/AboutUsCard";
+import { ServicesSection } from "../components/ServiceSection";
+import Footer from "../components/Footer";
 
 ChartJS.register(CategoryScale, LinearScale, PointElement, LineElement, Title);
 

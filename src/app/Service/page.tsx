@@ -51,21 +51,21 @@ const ServicesPage = () => {
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-white to-gray-50">
-        <header className="sticky top-0 z-10 bg-gray-900/80 backdrop-blur-sm border-b border-gray-800">
+      <header className="sticky top-0 z-10 bg-gray-900/80 backdrop-blur-sm border-b border-gray-800">
         <div className="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
           <motion.div
             initial={{ opacity: 0, x: -20 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.3 }}
           >
-            <h2 className="text-xl font-semibold">Services</h2>
+            <h2 className="text-xl font-semibold text-white">Services</h2>
           </motion.div>
           <motion.div
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
           >
-            <Link 
-              href="/" 
+            <Link
+              href="/"
               className="flex items-center gap-2 px-4 py-2 bg-blue-600 hover:bg-blue-700 rounded-lg transition-colors"
             >
               <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
@@ -75,27 +75,28 @@ const ServicesPage = () => {
             </Link>
           </motion.div>
         </div>
-      </header> 
+      </header>
       {/* Hero Section */}
       <div className="relative bg-gray-900 overflow-hidden">
         <div className="absolute inset-0">
           <Image
-            src="/services-bg.jpg"
+            src={require("../img/about-2-1.png")}
             alt="Digital services background"
             fill
-            className="object-cover opacity-30"
+
+            className="object-contain opacity-30 "
             priority
           />
         </div>
         <div className="relative max-w-7xl mx-auto px-6 py-24 sm:py-32 lg:px-8 text-center">
-          <motion.h1 
+          <motion.h1
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             className="text-4xl font-bold tracking-tight text-white sm:text-5xl lg:text-6xl"
           >
             Our Professional Services
           </motion.h1>
-          <motion.p 
+          <motion.p
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.1 }}
@@ -108,7 +109,7 @@ const ServicesPage = () => {
 
       {/* Services Grid */}
       <div className="max-w-7xl mx-auto px-6 py-16 sm:py-24 lg:px-8">
-        <motion.div 
+        <motion.div
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           viewport={{ once: true }}
@@ -156,7 +157,7 @@ const ServicesPage = () => {
       {/* CTA Section */}
       <div className="bg-gray-900">
         <div className="max-w-7xl mx-auto px-6 py-16 sm:py-24 lg:px-8 text-center">
-          <motion.h2 
+          <motion.h2
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             viewport={{ once: true }}
@@ -164,7 +165,7 @@ const ServicesPage = () => {
           >
             Ready to elevate your digital presence?
           </motion.h2>
-          <motion.p 
+          <motion.p
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             viewport={{ once: true }}

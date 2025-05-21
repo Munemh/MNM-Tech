@@ -170,7 +170,7 @@ const TeamPage = () => {
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.3 }}
           >
-            <h2 className="text-xl font-semibold">Team</h2>
+            <h2 className="text-xl font-semibold text-white">Team</h2>
           </motion.div>
           <motion.div
             whileHover={{ scale: 1.05 }}

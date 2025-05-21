@@ -517,7 +517,7 @@ const TechnologyDetailsPage = () => {
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.3 }}
           >
-            <h2 className="text-xl font-semibold">{currentTech.name} Details</h2>
+            <h2 className="text-xl font-semibold text-white">{currentTech.name} Details</h2>
           </motion.div>
           <div className="flex gap-4">
             <motion.div
